@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gesture Recognition</title>
+    <style>
+        body {
+    background-color: black;
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .photo {
+    text-align: center;
+  }
+  
+  .feed {
+    text-align: center;
+    margin-top: 50px;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="photo">
+            <h2>LET'S LEARN</h2>
+            <img src="https://www.researchgate.net/profile/Firas-Raheem/publication/340721626/figure/fig1/AS:881446436732928@1587164615640/American-Sign-Language-alphabet.jpg" width="320" height="320">
+        </div>
+        <div class="photo">
+            <h2>TALK TOGETHER</h2>
+            <img src='https://i0.wp.com/cms.babbel.news/wp-content/uploads/2021/04/Refresh_ASL.png?fit=1200%2C675&strip=none&ssl=1' width="420" height="320">
+        </div>
+    </div>
+    <div class="feed">
+        <h2>Gesture Recognition Feed</h2>
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
+    </div>
+</body>
+</html>
